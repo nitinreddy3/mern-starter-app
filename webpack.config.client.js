@@ -14,6 +14,10 @@ const config = {
     filename: 'bundle.js',
     publicPath: '/dist/'
   },
+  optimization: {
+    minimize: false,
+    noEmitOnErrors: false
+  },
   module: {
     rules: [
       {
@@ -31,8 +35,5 @@ const config = {
       'react-dom': '@hot-loader/react-dom'
     }
   },
-  optimization: {
-    emitOnErrors: true
-  }
 }
 module.exports = config;
